@@ -1,5 +1,5 @@
 public class App {
     public static void main(String[] args) throws Exception {
-        System.out.println("Test Edit");
+        System.out.println("Test".repeat(10));
     }
 }
