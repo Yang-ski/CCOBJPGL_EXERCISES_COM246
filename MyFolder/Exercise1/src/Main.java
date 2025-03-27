@@ -17,20 +17,34 @@ public class Main {
         System.out.println("Your Username: " + userInput);
         System.out.println("Your Password: " + passInput);
 
+        User me = new User(userInput, passInput);
+
         File myFile = new File("Accounts.txt");
 
         if (myFile.exists()) {
             System.out.println("File Exists");
         }
 
+        Boolean loginSuccess = false;
+
         Scanner fileScanner = new Scanner(myFile);
 
         while (fileScanner.hasNextLine()) {
             String filedata = fileScanner.nextLine();
             System.out.println(filedata);
-            
+
+            String usernameInput = filedata.split(",")[0];
+            String passwordInput = filedata.split(",")[1];
+
+            if (usernameInput.equals(userInput) && passwordInput.equals(passInput)) {
+                loginSuccess = true;
+            }
         }
 
-        
+        if (loginSuccess) {
+            System.out.println("Login Success, Hello " + me.getUsername());
+        } else {
+            System.out.println("Unsuccessful Login.");
+        }
     }
 }
