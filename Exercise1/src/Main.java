@@ -52,13 +52,14 @@ public class Main {
 
     DataScientist dataScientist1 = new DataScientist("John", null, null);
 
-    System.out.print("My Name is " + dataScientist1.name);
-    System.out.print("My Work is " + dataScientist1.getWork());
-    System.out.print("My Salary is " + dataScientist1.getSalary());
+    System.out.println("My Name is " + dataScientist1.name);
+    System.out.println("My Work is " + dataScientist1.getWork());
+    System.out.println("My Salary is " + dataScientist1.getSalary());
 
     Researcher researcher1 = new Researcher("Jane", null, null);
-    System.out.print("My Name is " + researcher1.name);
-    System.out.print("My Work is " + researcher1.getWork());
-    System.out.print("My Salary is " + researcher1.getSalary());
+    
+    System.out.println("My Name is " + researcher1.name);
+    System.out.println("My Work is " + researcher1.getWork());
+    System.out.println("My Salary is " + researcher1.getSalary());
     }
 } 
