@@ -8,4 +8,8 @@ public class HybridPickup extends HybridVehicle{
         System.out.print("Your " + carName + " is ");
         fillGas();
     }
+    public void disCharging(){
+        System.out.print("Your " + carName + " is ");
+        chargeBattery();
+    }
 }

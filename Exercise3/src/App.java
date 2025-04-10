@@ -17,13 +17,22 @@ public class App {
     cars.add(car2);
 
     CarWash wash = new CarWash();
-    
+/*
     ((HybridSedan) car1).disCharging();
+    ((HybridSedan) car1).disfuelling();
     ((HybridPickup) car2).disfuelling();
+    ((HybridPickup) car2).disCharging();
     
     System.out.println();
-
+*/
+    ((HybridSedan) car1).disCharging();
+    ((HybridSedan) car1).disfuelling();
     wash.Washing(car1);
+
+    System.out.println();
+
+    ((HybridPickup) car2).disCharging();
+    ((HybridPickup) car2).disfuelling();
     wash.Washing(car2);
         
     }

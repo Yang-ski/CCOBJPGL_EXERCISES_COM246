@@ -7,4 +7,9 @@ public class HybridSedan extends HybridVehicle{
         System.out.print("Your " + carName + " is ");
         chargeBattery();
     }
+
+    public void disfuelling(){
+        System.out.print("Your " + carName + " is ");
+        fillGas();
+    }
 }
