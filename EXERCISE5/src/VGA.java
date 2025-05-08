@@ -1,5 +1,3 @@
-class VGA {
-    public void connectWithVGA(){
-            System.out.println("Connected using VGA");
-    }
+interface VGA {
+    void connectWithVGA();
 }

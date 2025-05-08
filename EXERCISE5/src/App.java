@@ -1,9 +1,9 @@
 public class App {
     public static void main(String[] args) throws Exception {
     
-    VGA oldCable = new VGA();
+    HDMI oldCable = new HDMI();
 
-    HDMI adapter = new VGAtoHDMI(oldCable);
+    VGA adapter = new HDMItoVGA(oldCable);
 
     Monitor monitor = new Monitor();
     monitor.adapter(adapter);

@@ -1,13 +1,13 @@
-class VGAtoHDMI implements HDMI{
-    private VGA vga;
+class HDMItoVGA implements VGA{
+    private HDMI hdmi;
     
-    public VGAtoHDMI(VGA vga){
-        this.vga = vga;
+    public HDMItoVGA(HDMI hdmi){
+        this.hdmi = hdmi;
     }
 
     @Override
-    public void connectWithHDMI() {
-        System.out.println("Using a VGA cable Via VGA to HDMI adapter...");
-        vga.connectWithVGA();
+    public void connectWithVGA() {
+        System.out.println("Using an HDMI cable Via HDMI to VGA adapter...");
+        hdmi.connectWithHDMI();
     }
 }

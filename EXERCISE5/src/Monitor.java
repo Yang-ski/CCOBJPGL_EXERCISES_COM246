@@ -1,7 +1,7 @@
 class Monitor {
-    public void adapter(HDMI adapter) {
-        System.out.println("This Monitor is Expecting an HDMI Connection");
-        adapter.connectWithHDMI();
+    public void adapter(VGA adapter) {
+        System.out.println("This Monitor is Expecting an VGA Connection");
+        adapter.connectWithVGA();
         System.out.println("Connection Success");
     }
 }

@@ -1,3 +1,5 @@
-interface HDMI {
-    void connectWithHDMI();
+class HDMI {
+    public void connectWithHDMI(){
+            System.out.println("Connected using HDMI");
+    }
 }
