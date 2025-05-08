@@ -7,7 +7,7 @@ class HDMItoVGA implements VGA{
 
     @Override
     public void connectWithVGA() {
-        System.out.println("Using an HDMI cable Via HDMI to VGA adapter...");
+        System.out.println("Using Adapter to Connect to pc...");
         hdmi.connectWithHDMI();
     }
 }
