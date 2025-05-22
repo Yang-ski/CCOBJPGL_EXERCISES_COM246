@@ -10,13 +10,13 @@ import javafx.scene.control.Label;
 public class HomeController implements Initializable {
 
     @FXML
-    Label usernamelabel;
+    Label usernameLabel;
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
 
         // TODO Auto-generated method stub
         String username = LoginController.user.getUsername();
-        usernamelabel.setText(username);
+        usernameLabel.setText(username);
     } 
 }

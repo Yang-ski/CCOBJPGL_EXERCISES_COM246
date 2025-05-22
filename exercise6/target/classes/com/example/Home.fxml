@@ -9,12 +9,12 @@
    <children>
       <Label alignment="CENTER" layoutX="94.0" layoutY="127.0" prefHeight="73.0" prefWidth="412.0" text="Welcome" textAlignment="CENTER">
          <font>
-            <Font size="50.0" />
+            <Font name="Arial" size="50.0" />
          </font>
       </Label>
-      <Label id="UserNameLabel" alignment="CENTER" layoutX="260.0" layoutY="200.0" text="User">
+      <Label id="usernameLabel" alignment="CENTER" layoutX="258.0" layoutY="200.0" text="User">
          <font>
-            <Font size="40.0" />
+            <Font name="Arial" size="40.0" />
          </font>
       </Label>
    </children>

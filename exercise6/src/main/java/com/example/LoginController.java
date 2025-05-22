@@ -21,13 +21,13 @@ import javafx.scene.control.Alert.AlertType;
 public class LoginController {
  
     @FXML
-    TextField usernametextfield;
+    TextField userField;
 
     @FXML
-    PasswordField passwordfield;
+    PasswordField passField;
 
     @FXML
-    Button loginbutton;
+    Button logField;
 
     private Stage stage;
     private Scene scene;
@@ -40,10 +40,10 @@ public class LoginController {
     public void loginbuttonHandler(ActionEvent event) throws IOException{
         
         // Retrieve username in text field
-        String username = usernametextfield.getText();
+        String username = userField.getText();
 
         // Retrieve password in password field
-        String password = passwordfield.getText();
+        String password = passField.getText();
 
         // Create user object
         user = new User(username, password);
