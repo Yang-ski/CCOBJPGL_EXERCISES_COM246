@@ -185,7 +185,6 @@ public class HomeController implements Initializable {
             BufferedWriter myWriter = new BufferedWriter(new FileWriter("accounts.txt", true));
       
             // .write() methods adds content to the file
-            myWriter.newLine(); // adds a new line
             myWriter.write(user.getUsername() + "," + user.getPassword() + "," + user.getAccountcreated() + "," + user.getAccountstatus());
 
             // Close FileWriter
@@ -285,7 +284,6 @@ public class HomeController implements Initializable {
             return false;
         }
 
-        //String filename = "accounts.txt";
         String targetUsername = user.getUsername();
         String newPassword = password;
         String newStatus = status;
@@ -300,16 +298,9 @@ public class HomeController implements Initializable {
                     String[] parts = line.split(",");
 
                     if (parts.length == 4 && parts[0].equalsIgnoreCase(targetUsername)) {
-                        updatedLines.add(parts[0] + "," + newPassword + "," + user.getAccountcreated() + "," + newStatus);
+                        updatedLines.add(username + "," + newPassword + "," + user.getAccountcreated() + "," + newStatus);
                     } else {
                         updatedLines.add(line);
-                    }
-
-                    if (parts.length == 2 && parts[0].equalsIgnoreCase(targetUsername)) {
-                    //     Update password
-                    updatedLines.add(parts[0] + "," + newPassword + "," + newStatus);
-                    } else {
-                    updatedLines.add(line);
                     }
                 }
             }
