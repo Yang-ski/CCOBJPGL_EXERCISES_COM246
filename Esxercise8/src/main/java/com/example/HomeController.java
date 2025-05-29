@@ -305,13 +305,14 @@ public class HomeController implements Initializable {
                         updatedLines.add(line);
                     }
 
-                    // if (parts.length == 2 && parts[0].equalsIgnoreCase(targetUsername)) {
-                    //     // Update password
-                    //     updatedLines.add(parts[0] + "," + newPassword + "," + newStatus);
-                    // } else {
-                    //     updatedLines.add(line);
+                    if (parts.length == 2 && parts[0].equalsIgnoreCase(targetUsername)) {
+                    //     Update password
+                    updatedLines.add(parts[0] + "," + newPassword + "," + newStatus);
+                    } else {
+                    updatedLines.add(line);
                     }
                 }
+            }
         } catch (IOException e) {
             e.printStackTrace();
             return false;
