@@ -181,9 +181,9 @@ public class HomeController implements Initializable {
         User user = new User(username, password, formattedDate, status);
 
         try {
-
+            
             BufferedWriter myWriter = new BufferedWriter(new FileWriter("accounts.txt", true));
-      
+
             // .write() methods adds content to the file
             myWriter.write(user.getUsername() + "," + user.getPassword() + "," + user.getAccountcreated() + "," + user.getAccountstatus());
 
